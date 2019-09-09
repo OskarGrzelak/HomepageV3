@@ -13,7 +13,11 @@
 }
 
 .section--dark-white {
-    background-image: linear-gradient(84deg, $color-dark 30%, #FFFFFF 30%);
+    background-image: linear-gradient(to bottom, #FFFFFF 85%, $color-dark 85%);
+
+    @include respond(md) {
+        background-image: linear-gradient(84deg, $color-dark 30%, #FFFFFF 30%);
+    }
 }
 
 .section--white {

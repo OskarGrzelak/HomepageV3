@@ -1,0 +1,64 @@
+.portfolio {
+    padding: 15rem 5rem 10rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5rem;
+    justify-items: center;
+    color: $color-dark;
+
+    @include respond(sm) {
+        padding: 15rem 10rem 10rem;
+    }
+
+    @include respond(md) {
+        grid-template-columns: 25rem auto;
+    }
+
+    @include respond(lg) {
+        grid-template-columns: 40rem auto;
+    }
+
+    &__image {
+        display: block;
+        height: 60vw;
+        width: 60vw;
+        border-radius: 100%;
+        border: 5px solid $color-dark;
+        background-image: url('../../img/whattosee.jpg');
+        background-position: center;
+        background-size: cover;
+
+        @include respond(sm) {
+            height: 35rem;
+            width: 35rem;
+        }
+
+        @include respond(md) {
+            align-self: center;
+            height: 25rem;
+            width: 25rem;
+            border: 6px solid $color-dark;
+        }
+
+        @include respond(lg) {
+            height: 40rem;
+            width: 40rem;
+            border: 8px solid $color-dark;
+        }
+
+        @include respond(hg) {
+            border: 10px solid $color-dark;
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+}

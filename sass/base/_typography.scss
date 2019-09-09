@@ -43,6 +43,14 @@ h2 {
 
 h3 {
     font-size: 2.3rem;
+
+    @include respond(md) {
+        font-size: 2.7rem;
+    }
+
+    @include respond(lg) {
+        font-size: 3.2rem;
+    }
 }
 
 p {
@@ -61,7 +69,7 @@ p {
         margin-bottom: 1.5rem;
 
         @include respond(md) {
-            fmargin-bottom: 1.8rem;
+            margin-bottom: 1.8rem;
         }
     
         @include respond(lg) {

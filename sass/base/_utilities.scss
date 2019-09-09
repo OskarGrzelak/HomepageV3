@@ -1,9 +1,13 @@
 .u-margin-bottom-small {
     margin-bottom: 1.2rem;
-}
 
-.u-margin-bottom-medium {
-    margin-bottom: 2rem;
+    @include respond(md) {
+        margin-bottom: 1.4rem;
+    }
+
+    @include respond(lg) {
+        margin-bottom: 1.6rem;
+    }
 }
 
 .u-margin-bottom-big {
