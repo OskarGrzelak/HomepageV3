@@ -1,0 +1,61 @@
+.about {
+    width: 100%;
+    padding: 15rem 5rem;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(sm) {
+        padding: 15rem 10rem;
+    }
+
+    @include respond(md) {
+        padding: 15rem 15rem;
+    }
+
+    @include respond(lg) {
+        padding: 15rem 20rem;
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include respond(md) {
+            flex-direction: row;
+        }
+
+        & span {
+            display: flex;
+            flex: 1;
+            justify-content: space-around;
+
+            &:first-of-type {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__svg {
+        width: 5rem;
+        height: 5rem;
+
+        @include respond(sm) {
+            width: 5.5rem;
+            height: 5.5rem;
+        }
+
+        @include respond(md) {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        @include respond(lg) {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+}

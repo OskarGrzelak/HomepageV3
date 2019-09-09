@@ -49,7 +49,23 @@ p {
     font-size: 1.8rem;
     line-height: 1.4;
 
+    @include respond(md) {
+        font-size: 2rem;
+    }
+
+    @include respond(lg) {
+        font-size: 2.2rem;
+    }
+
     &:not(:last-of-type) {
         margin-bottom: 1.5rem;
+
+        @include respond(md) {
+            fmargin-bottom: 1.8rem;
+        }
+    
+        @include respond(lg) {
+            margin-bottom: 2rem;
+        }
     }
 }
