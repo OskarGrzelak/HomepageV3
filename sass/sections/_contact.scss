@@ -1,0 +1,107 @@
+.contact {
+    padding: 0 5rem;
+    display: grid;
+
+    @include respond(sm) {
+        padding: 0 10rem;
+    }
+
+    @include respond(md) {
+        padding: 0;
+        grid-template-columns: 60% 40%;
+    }
+
+    @include respond(lg) {
+        padding: 0 5rem;
+    }
+
+    &__invitation {
+        padding: 10rem 0;
+        color: #000A63;
+
+        @include respond(md) {
+            padding: 10rem 5rem;
+        }
+    }
+
+    &__details {
+        padding: 10rem 0;
+        display: flex;
+        flex-direction: column;
+        color: #FFFFFF;
+        list-style: none;
+        justify-self: center;
+        align-self: center;
+        position: relative;
+
+        &::after {
+            display: none;
+
+            @include respond(md) {
+                display: block;
+                content: '';
+                position: absolute;
+                height: 25vw;
+                width: 25vw;
+                border: 6px solid $color-dark;
+                border-radius: 100%;
+                background-image: url('../../img/oskargrzelak.jpg');
+                background-size: cover;
+                background-position: center;
+                bottom: -20vw;
+                left: -15vw;
+            }
+
+            @include respond(lg) {
+                border: 8px solid $color-dark;
+            }
+
+            @include respond(hg) {
+                border: 10px solid $color-dark;
+            }
+        }
+    }
+
+    &__detail {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+
+        @include respond(sm) {
+            font-size: 2rem;
+        }
+
+        @include respond(md) {
+            font-size: 2.2rem;
+        }
+
+        @include respond(lg) {
+            font-size: 2.5rem;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+
+            @include respond(lg) {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+    &__svg {
+        fill: #FFFFFF;
+        width: 3rem;
+        height: 3rem;
+        margin-right: 2rem;
+
+        @include respond(sm) {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+
+        @include respond(lg) {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+}

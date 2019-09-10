@@ -25,5 +25,11 @@
 }
 
 .section--white-dark {
-    background-image: linear-gradient(84deg, #FFFFFF 60%, $color-dark 60%);
+    background-image: linear-gradient(to bottom, #FFFFFF 50%, $color-dark 50%);
+    border-top: 5px solid $color-dark;
+    
+    @include respond(md) {
+        background-image: linear-gradient(84deg, #FFFFFF 60%, $color-dark 60%);
+        border-top: 5px solid #FFFFFF;
+    }
 }
