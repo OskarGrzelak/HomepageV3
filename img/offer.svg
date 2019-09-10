@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1736" height="1140" viewBox="0 0 1736 1140">
+  <defs>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css?family=Questrial|Source+Code+Pro&amp;display=swap");
+    </style>
+    <style>
+      text, circle {
+        fill: #000A63;
+      }
+      line {
+        stroke: #000a63;
+        stroke-width: 4;
+      }
+      text.header {
+        font-size: 3rem;
+        font-family: Source Code Pro;
+      }
+      text.paragraph {
+        font-size: 1.8rem;
+        font-family: Questrial;
+      }
+    </style>
+  </defs>
+  <g id="offer" transform="translate(-92 -3842)">
+    <line id="Line_7" x2="265" y2="315" transform="translate(968.5 4367.5)" fill="none"/>
+    <line id="Line_8" y1="74" x2="328" transform="translate(968.5 4293.5)" fill="none"/>
+    <line id="Line_9" x1="49" y2="472" transform="translate(919.5 4367.5)" fill="none"/>
+    <line id="Line_10" x1="345" y2="113" transform="translate(623.5 4367.5)" fill="none"/>
+    <line id="Line_11" x1="260" y1="246" transform="translate(708.5 4121.5)" fill="none"/>
+    <line id="Line_12" y1="445" x2="84" transform="translate(968.5 3922.5)" fill="none"/>
+    <circle id="Ellipse_7" cx="148.5" cy="148.5" r="148.5" transform="translate(820 4219)" stroke="#fff" stroke-width="10"/>
+    <circle id="Ellipse_8" cx="17.5" cy="17.5" r="17.5" transform="translate(1035 3905)"/>
+    <circle id="Ellipse_9" cx="17.5" cy="17.5" r="17.5" transform="translate(1279 4276)"/>
+    <circle id="Ellipse_10" cx="17.5" cy="17.5" r="17.5" transform="translate(691 4104)"/>
+    <circle id="Ellipse_11" cx="17.5" cy="17.5" r="17.5" transform="translate(606 4463)"/>
+    <circle id="Ellipse_12" cx="17.5" cy="17.5" r="17.5" transform="translate(1216 4665)"/>
+    <circle id="Ellipse_13" cx="17.5" cy="17.5" r="17.5" transform="translate(902 4814)"/>
+    <text class="header" id="header" transform="translate(1100 3902)" ><tspan x="0" y="0">clean code</tspan></text>
+    <text class="paragraph" id="paragraph" transform="translate(1100 3936)"><tspan x="0" y="19">I always keep my code clean. It&apos;s easy to read, </tspan><tspan x="0" y="49">easy to understand and easy to change.</tspan></text>
+    <text class="header" id="header-2" transform="translate(1344 4273)"><tspan x="0" y="0">modern design</tspan></text>
+    <text class="paragraph" id="paragraph-2" transform="translate(1344 4307)"><tspan x="0" y="19">Being up to date with web design </tspan><tspan x="0" y="49">trends is part of my life. Your project </tspan><tspan x="0" y="79">will fit these very modern days.</tspan></text>
+    <text class="header" id="header-3" transform="translate(1281 4662)"><tspan x="0" y="0">interactivity</tspan></text>
+    <text class="paragraph" id="paragraph-3" transform="translate(1281 4696)"><tspan x="0" y="19">Today's web applications have to be </tspan><tspan x="0" y="49">interactive in order to increase user's </tspan><tspan x="0" y="79">engagement. I fully understand this and I </tspan><tspan x="0" y="109">will make your app very attractive and </tspan><tspan x="0" y="139">engaging.</tspan></text>
+    <text class="header" id="header-4" transform="translate(372 4811)"><tspan x="0" y="0">responsiveness</tspan></text>
+    <text class="paragraph" id="paragraph-4" transform="translate(372 4845)"><tspan x="0" y="19">I can assure you, your website or </tspan><tspan x="0" y="49">application will look amazing on every </tspan><tspan x="0" y="79">screen. I'll take care of it. Every size </tspan><tspan x="0" y="109">matters! </tspan></text>
+    <text class="header" id="header-5" transform="translate(92 4460)"><tspan x="0" y="0">intuitive ux</tspan></text>
+    <text class="paragraph" id="paragraph-5" transform="translate(92 4494)"><tspan x="0" y="19">A website can have the most beautiful </tspan><tspan x="0" y="49">look but it is useless when the feeling is </tspan><tspan x="0" y="79">wrong. I always think about users and </tspan><tspan x="0" y="109">their comfort.</tspan></text>
+    <text class="header" id="header-6" transform="translate(125 4101)"><tspan x="0" y="0">professionalism</tspan></text>
+    <text class="paragraph" id="paragraph-6" transform="translate(125 4135)"><tspan x="0" y="19">You can completely rely on me. I do my job </tspan><tspan x="0" y="49">according to prearranged specification </tspan><tspan x="0" y="79">and I always meet deadlines.</tspan></text>
+  </g>
+</svg>

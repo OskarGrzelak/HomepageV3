@@ -1,0 +1,54 @@
+.offer {
+    padding: 10rem 5rem;
+    color: $color-dark;
+
+    @include respond(sm) {
+        padding: 10rem 10rem;
+    }
+
+    &--big {
+        display: none;
+
+        @include respond(md) {
+            display: block;
+        }
+    }
+
+    &--small {
+        display: block;
+        margin-left: 4rem;
+
+        @include respond(md) {
+            display: none;
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__feature {
+        position: relative;
+        
+        &:not(:last-of-type) {
+            margin-bottom: 5rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: $color-dark;
+            border-radius: 100%;
+            left: -4rem;
+        }
+    }
+
+    &__svg {
+        width: 100%;
+    }
+
+    
+}
