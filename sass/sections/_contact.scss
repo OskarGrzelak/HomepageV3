@@ -54,6 +54,10 @@
 
             @include respond(lg) {
                 border: 8px solid $color-dark;
+                height: 30rem;
+                width: 30rem;
+                bottom: -20rem;
+                left: -25rem;
             }
 
             @include respond(hg) {
