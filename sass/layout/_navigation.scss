@@ -1,5 +1,10 @@
 .navigation {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #FFFFFF;
 
     @include respond(md) {
         padding: 10rem 5rem;
@@ -8,6 +13,62 @@
         align-items: flex-end;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+    }
+
+    &__toggler {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 100%;
+        background-color: #FFFFFF;
+        z-index: 10;
+
+        @include respond(md) {
+            display: none;
+        }
+
+        &:hover .navigation__icon {
+            width: 4rem;
+        }
+
+        &:hover .navigation__icon::before,
+        &:hover .navigation__icon::after {
+            width: 3rem;
+        }
+    }
+
+    &__icon {
+        display: block;
+        height: 2px;
+        width: 3rem;
+        background-color: $color-dark;
+        position: absolute;
+        top: 4rem;
+        transform: translateY(-50%);
+        left: 2rem;
+        transition: width .2s;
+
+        &::before,
+        &::after {
+            content: '';
+            height: 2px;
+            width: 4rem;
+            display: block;
+            background-color: $color-dark;
+            position: absolute;
+            transition: width .2s;
+        }
+
+        &::before {
+            top: -1.1rem;
+        }
+
+        &::after {
+            top: 1.1rem;
+        }
     }
 
     &__list {
@@ -47,49 +108,3 @@
         margin-bottom: 4.5rem;
     }
 }
-
-/* .navigation {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    padding: 10rem 5rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-
-    &__list {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    &__item {
-        padding: 5px 0;
-        color: $color-dark;
-        font-size: 2.5rem;
-        cursor: pointer;
-        position: relative;
-        display: inline-block;
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 0;
-            height: 2px;
-            border-radius: 100px;
-            background-color: $color-dark;
-            display: block;
-            transition: width .5s;
-        }
-
-        &:hover::after {
-            width: 100%;
-        }
-    }
-
-    &__item:not(:last-of-type) {
-        margin-bottom: 4.5rem;
-    }
-} */
